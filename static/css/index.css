@@ -135,5 +135,17 @@ body {
   font-size: smaller;
 }
 
+.image-container {
+  position: relative;
+}
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  border-left: 1px solid black; /* 设置分割线样式 */
+}
 
 
